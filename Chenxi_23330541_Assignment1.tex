@@ -1,0 +1,168 @@
+\documentclass[12pt]{article} % Document class, and 12 pt
+
+% Packages
+\usepackage[utf8]{inputenc} % Input encoding
+\usepackage[T1]{fontenc}    % Output encoding
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{graphicx} % insert picture
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{titlesec} % make section 12pt and bold
+\usepackage{natbib} % Harvard reference format
+\usepackage[hang]{footmisc} % no space in footnote
+\usepackage{hyperref}
+
+% make section pt 12 and bold
+\titleformat{\section}{\bfseries\fontsize{12}{14}\selectfont}{\thesection}{1em}{}
+% no space between section
+\titlespacing{\section}{0pt}{\parskip}{-\parskip}
+
+\doublespacing
+
+\definecolor{one-light-bg}{RGB}{255, 255, 255}
+\definecolor{one-light-fg}{RGB}{40, 40, 40}
+\definecolor{one-light-yellow}{RGB}{204, 180, 0}
+\definecolor{one-light-orange}{RGB}{245, 112, 58}
+\definecolor{one-light-purple}{RGB}{153, 102, 255}
+\definecolor{one-light-cyan}{RGB}{97, 175, 239}
+\definecolor{one-light-green}{RGB}{152, 195, 121}
+\definecolor{one-light-red}{RGB}{224, 108, 117}
+
+\lstdefinestyle{onelight}{
+	backgroundcolor=\color{one-light-bg},
+	basicstyle=\color{one-light-fg}\ttfamily,
+	commentstyle=\color{one-light-yellow},
+	keywordstyle=\color{one-light-purple},
+	numberstyle=\tiny\color{one-light-fg},
+	stringstyle=\color{one-light-cyan},
+	identifierstyle=\color{one-light-orange},
+	emphstyle=\color{one-light-green},
+	emph={[2]TRUE,FALSE},
+	emphstyle={[2]\color{one-light-red}},
+	breaklines=true,
+	breakatwhitespace=true,
+	numbers=left,
+	numbersep=5pt,
+	stepnumber=1,
+	showstringspaces=false,
+	frame=single,
+	rulecolor=\color{one-light-fg},
+	framerule=0.5pt,
+	tabsize=4,
+	columns=flexible,
+	extendedchars=true,
+	inputencoding=utf8,
+	upquote=true,
+}
+
+\lstset{style=onelight}
+
+% Page layout settings
+\usepackage[a4paper, margin=2.5cm]{geometry} % Set paper size and margins
+
+
+
+\title{Experimental Methods for Social Scientist }
+\date{Due: February 11, 2024}
+\author{Chenxi Li}
+
+\begin{document}
+\begin{figure}[h]
+	\centering
+	\vspace{-2.5cm}
+	\hspace{-8cm}
+	\includegraphics[width=12cm]{Trinity_icon.jpg}  
+\end{figure}
+
+\vspace{.5cm}
+\begin{center}
+\noindent {\fontsize{18}{22}\selectfont\textbf{School of Social Sciences and Philosophy}}\\
+\noindent {\fontsize{18}{22}\selectfont\textbf{Assignment Submission Form}}
+\end{center}
+
+\vspace{.7cm}
+
+
+\begin{center}
+		\begin{tabular}{|>{\arraybackslash}p{4cm}|>{\arraybackslash}p{8cm}|}
+			\hline
+			Student Name: & Chenxi Li\\
+			\hline
+			Student ID Number: & 23330541 \\
+			\hline
+			Programme Title: & Applied Social Data Science \\
+			\hline
+			Module Title: & Experimental Methods for Social Scientist \\
+			\hline
+			Assessment Title: & \textit{Experimental design, part 1 }\\
+			\hline
+			Lecture(s): & Dr Gizem Arikan \\
+			\hline
+			Date Submitted: & \today \\
+			\hline
+		\end{tabular}
+\end{center}
+
+\vspace{.7cm}
+
+\noindent I have read and I understand the plagiarism provisions in the General Regulations of the University Calendar for the current year, found at:  \url{http://www.tcd.ie/calendar} \\
+
+\noindent I have also completed the Online Tutorial on avoiding plagiarism ‘Ready, Steady, Write’, located at \url{http://tcd-ie.libguides.com/plagiarism/ready-steady-write} \\
+
+\vspace{.7cm}
+
+
+\begin{flushleft}
+	\begin{minipage}{0.5\linewidth}
+		\textbf{Signature:}
+		\raisebox{-0.3\height}{\includegraphics[width=0.6\linewidth]{signature.png}}
+	\end{minipage}
+\end{flushleft}
+
+\vspace{.3cm}
+
+\noindent \textbf{Date: } \today
+
+\newpage
+\begin{center}
+	\textbf{POP 77034 Experimental Methods for Social Scientist}\\
+	\textbf{Hilary Term 2024}\\
+	\textbf{\textit{Experimental design, part 1 (400 - 800 words)}} \\
+	\vspace{.3cm}
+	\textbf{Chenxi Li, 23330541}
+\end{center}
+
+\vspace{.3cm}
+
+\noindent \textbf{Does Gamification\footnote{Gamification, as Deterding defined in his paper, is the use of game design elements in non-game contexts (\cite{deterding2011game}). In this research proposal, I use this concept to describe a range of game design techniques undertaken in the context of the teaching and learning process.} Strategy in Education Improve Student's Efficiency?}\\
+
+\section*{Introduction \& Research Question}
+\noindent As a new-rising strategy, the market size of gamification is growing rapidly from 14.87 million in 2022 to 18.87 million in 2023\footnote{Gamification Statistics And Trends, \url{https://mambo.io/gamification-guide}, Last Accessed: 3 February 2024}, and much of this depends on the wide range of areas, including business, management, socialized and importantly, education, in which it is utilized. Data have proved that in 2023 over 70\% of the Global 2000 companies integrate gamification into their business strategies\footnote{Gamification marketing statistics, \url{https://adact.me/blog/gamification-marketing-highlights/} Last Accessed: 4 February 2023}, 95\% of workers benefit from gamification management \footnote{Gamification Statistics and Facts [2023 Updated Data], \url{https://techreport.com/statistics/gamification-statistics/}, Last Accessed: 2 February 2024}, and in socialization, gamification increase commenting and sharing by 13\% and 22\% respectively\footnote{19 Gamification trends for 2023-2025: top stats, facts \& examples,\url{ https://www.growthengineering.co.uk/19-gamification-trends-for-2022-2025-top-stats-facts-examples/}, Last Accessed: 04 February 2024}.\\
+
+\noindent The combination of gamification and study is not a new topics. Many researchers have confirmed the positive results of this combination (\cite{putz2020can}, \cite{bicen2018perceptions}, \cite{amriani2013empirical} etc.) And some researchers also go further and pointed out gamification effect will be influenced by participant's personality in study(\cite{smiderle2020impact}).Wiggins concluded this combination in two major forms, which is game-based learning and gamification, and he also found most researches in this field only focused on primary and secondary education, but seldom in post-secondary level (\cite{wiggins2016overview}).\\
+
+\noindent To fill the blank of post-secondary research in gamification, we want to hold a experiment in a college to explore the results of gamification in education. So, obviously our dependent and independent variables are the final term score and gamification methodology respectively, and our research question is: In the higher education system, does gamification make students more efficient in study? \\
+
+\section*{Population of Interest}
+\noindent It is important that the population selection be made in terms of feasibility and representative. In this case, we chose Trinity College Dublin's current undergraduate students as the population of our study.\\
+
+\noindent Here are the reasons: (1) As a student in Trinity College Dublin, it is more feasible to sample on campus, and this is also an economic way to conduct experiment; (2)  Trinity College Dublin enrolls students from all cultures so that it has a good cultural diversity, which can provide characteristically rich population and samples; (3) One academic year in Trinity College Dublin is divided by 3 terms, which is convenient for a 1-year experiment programme. Researchers can do a pilot survey in Michaelmas term, a formal survey in Hilary Term and research paper writing in Trinity Term.\\
+
+\section*{Measurement Strategy}
+\noindent Simply use final score to measure gamification results is thin. In previous research, scholars use a series of complex indicators including lecture attendance, content understanding, problem solving skills etc. (\cite{o2013case}), and other research also use extrovert indexes like immersion, achievement and social -related features and introvert indexes like autonomy, competence and relatedness needs to measure gamification results (\cite{xi2019does}). So, I plan to measure outcome with not only final score, but also several additional techniques.\\
+
+\noindent After the experiment, I will collect the students' semester performance feedback forms and final grades from the instructors and distribute relevant questionnaires to the students. The content of the questionnaire will involve a subsequent further operationalized definition of the concept of gamification. Additionally, I believe it is necessary to conduct qualitative interviews with the teachers and students who participated in the experiment involving their subjective experiences of the gamification process. The final analysis of the dependent variables will be a combination of this - student performance data from the lectures, qualitative interviews with participants, and a questionnaire designed based on the results of previous gamification theories.\\
+
+\section*{Ethical Considerations}
+\noindent Considering the principle of randomization, selecting undergraduate students in the same class with a different course format may lead to a unfair differential treatment suspect. In addition to this, the choice of the laboratory course is also very important. On the one hand, if a core course is chosen, it may lead to students suffering from the detrimental effects of the course; on the other hand, if a non-core course is chosen, there is a risk that students may not take the course content seriously.\\
+
+\noindent The private information that may be involved in this study includes a range of student performance data across the curriculum, student attitudes towards gamification, and so on, so it is important to be truthful at the outset of the experiment about the curricular differences that the beginning and ask consent. For quantitative data such as student grades and questionnaires, we need to write detailed cover letters describing the details of the study like data collection, confidentiality measures, and data analysis strategies; for qualitative data such as interviews, we need to use code words to obscure specific individuals in subsequent report writing. This experiment will fully comply the Trinity College Dublin's code of ethics\footnote{For more details about Trinity College Dublin's research ethics, please check the link:  \url{https://www.tcd.ie/about/content/policies_summary_index.php}} for academic research.\\
+\newpage
+\bibliographystyle{agsm}
+\bibliography{mybibliography}
+
+\end{document}
