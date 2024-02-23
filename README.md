@@ -1,4 +1,4 @@
-# Experimental_Spring24
+# Experimental_Spring2024
 Experimental Methods for Social Scientists Coursework Records.
 
 ## Table of contents
