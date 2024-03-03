@@ -18,7 +18,3 @@ Experimental Methods for Social Scientists Coursework Records.
   + Assignment2_Reference.bib
  
 + [3] FinalProject
-
-## Assignment Content
-
-These assignments includ these contents:
