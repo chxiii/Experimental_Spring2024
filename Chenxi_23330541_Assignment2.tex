@@ -1,0 +1,198 @@
+\documentclass[12pt]{article} % Document class, and 12 pt
+
+% Packages
+\usepackage[utf8]{inputenc} % Input encoding
+\usepackage[T1]{fontenc}    % Output encoding
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{graphicx} % insert picture
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{titlesec} % make section 12pt and bold
+\usepackage{natbib} % Harvard reference format
+\usepackage[hang]{footmisc} % no space in footnote
+\usepackage{hyperref}
+
+% make section pt 12 and bold
+\titleformat{\section}{\bfseries\fontsize{12}{14}\selectfont}{\thesection}{1em}{}
+% no space between section
+\titlespacing{\section}{0pt}{\parskip}{-\parskip}
+
+\doublespacing
+
+\definecolor{github-light-bg}{RGB}{255, 255, 255}
+\definecolor{github-light-fg}{RGB}{3, 102, 214}
+\definecolor{github-light-yellow}{RGB}{128, 102, 0}
+\definecolor{github-light-orange}{RGB}{170, 0, 17}
+\definecolor{github-light-purple}{RGB}{102, 51, 153}
+\definecolor{github-light-cyan}{RGB}{0, 128, 128}
+\definecolor{github-light-green}{RGB}{0, 128, 0}
+\definecolor{github-light-red}{RGB}{204, 0, 0}
+
+\lstdefinestyle{githublight}{
+	backgroundcolor=\color{github-light-bg},
+	basicstyle=\color{github-light-fg}\ttfamily,
+	commentstyle=\color{github-light-green},
+	keywordstyle=\color{github-light-purple},
+	numberstyle=\tiny\color{github-light-fg},
+	stringstyle=\color{github-light-cyan},
+	identifierstyle=\color{github-light-orange},
+	emphstyle=\color{github-light-red},
+	emph={[2]TRUE,FALSE},
+	emphstyle={[2]\color{github-light-yellow}},
+	breaklines=true,
+	breakatwhitespace=true,
+	numbers=left,
+	numbersep=5pt,
+	stepnumber=1,
+	showstringspaces=false,
+	frame=single,
+	rulecolor=\color{github-light-fg},
+	framerule=0.5pt,
+	tabsize=4,
+	columns=flexible,
+	extendedchars=true,
+	inputencoding=utf8,
+	upquote=true,
+}
+
+\lstset{style=githublight}
+
+% Page layout settings
+\usepackage[a4paper, margin=2.5cm]{geometry} % Set paper size and margins
+
+\title{Experimental Methods for Social Scientist }
+\date{Due: February 18, 2024}
+\author{Chenxi Li}
+
+\begin{document}
+\begin{figure}[h]
+	\centering
+	\vspace{-2.5cm}
+	\hspace{-8cm}
+	\includegraphics[width=12cm]{Trinity_icon.jpg}  
+\end{figure}
+
+\vspace{.5cm}
+\begin{center}
+\noindent {\fontsize{18}{22}\selectfont\textbf{School of Social Sciences and Philosophy}}\\
+\noindent {\fontsize{18}{22}\selectfont\textbf{Assignment Submission Form}}
+\end{center}
+
+\vspace{.7cm}
+
+
+\begin{center}
+		\begin{tabular}{|>{\arraybackslash}p{4cm}|>{\arraybackslash}p{8cm}|}
+			\hline
+			Student Name: & Chenxi Li\\
+			\hline
+			Student ID Number: & 23330541 \\
+			\hline
+			Programme Title: & Applied Social Data Science \\
+			\hline
+			Module Title: & Experimental Methods for Social Scientist \\
+			\hline
+			Assessment Title: & \textit{Experimental design, part 2 }\\
+			\hline
+			Lecture(s): & Dr Gizem Arikan \\
+			\hline
+			Date Submitted: & \today \\
+			\hline
+		\end{tabular}
+\end{center}
+
+\vspace{.7cm}
+
+\noindent I have read and I understand the plagiarism provisions in the General Regulations of the University Calendar for the current year, found at:  \url{http://www.tcd.ie/calendar} \\
+
+\noindent I have also completed the Online Tutorial on avoiding plagiarism ‘Ready, Steady, Write’, located at \url{http://tcd-ie.libguides.com/plagiarism/ready-steady-write} \\
+
+\vspace{.7cm}
+
+
+\begin{flushleft}
+	\begin{minipage}{0.5\linewidth}
+		\textbf{Signature:}
+		\raisebox{-0.3\height}{\includegraphics[width=0.6\linewidth]{signature.png}}
+	\end{minipage}
+\end{flushleft}
+
+\vspace{.3cm}
+
+\noindent \textbf{Date: } \today
+
+\newpage
+\begin{center}
+	\textbf{POP 77034 Experimental Methods for Social Scientist}\\
+	\textbf{Hilary Term 2024}\\
+	\textbf{\textit{Experimental design, part 2 (400 - 800 words)}} \\
+	\vspace{.3cm}
+	\textbf{Chenxi Li, 23330541}
+\end{center}
+
+\vspace{.3cm}
+
+\noindent \textbf{Does Gamification Strategy in Education Improve Student's Efficiency?}\\
+
+\section*{Treatment \& Manipulation}
+\noindent The treatment will be the gamification strategy, so, the key point is how we operationalization this term. 
+In 2015, a paper reviewed 45 previous research and  concluded the exact dimensions divided during their experimental design, which refers to points, leaderboards, achievements, levels, story, goals, feedback, rewards, progress and challenge (\cite{hamari2014does}). But in most case, researchers only focus on several of them for their own purpose. For example, Marczewski used achievements, rewards and points for employee competition (\cite{marczewski2013gamification}), Seaborn and Fels, from a HCI perspective, manipulate gamification in different type of games including alternate reality games (ARGs), game with a purpose (GWAPs), and gameful design (\cite{seaborn2015gamification}).\\
+
+\noindent In education field, researchers usually aimed to those more relatable aspects of gamification that are more likely to unlock the potential of students like rapid feedback, progression, story, fail chance (\cite{stott2013analysis}, \cite{caponetto2014gamification}, \cite{arnold2014gamification}). Further more, a good experimental design should focus both short-term and long-term study (\cite{hallifax2019adaptive}). So, base on these literature, we can start our treatment design.\\
+
+\noindent I plan to combine game system into teaching process. The following table is a synopsis of these five dimensions, with further explanations after the table. \\
+\newpage
+\begin{table}[ht]
+	\centering
+	\caption{Gamification in Teaching Process}
+	\begin{tabular}{lc}
+		\toprule
+		  & Description \\
+		\midrule
+		Rapid Feedback &  Use emotion feedback (\cite{hassan2019motivational})\\
+		Progression &  Badges and achievement record student progress \\ 
+		Story &  Interaction \& MDE framework (\cite{robson2015all}) \\
+		Fail Chance & Tolerate students make mistake (\cite{manzano2021between})\\
+		Short - Long Term & Half term and end of term tests \\
+		\bottomrule
+	\end{tabular} 
+\end{table}
+\noindent But we must notice some interference in measurements may exist. For example, when refers to emotion rapid feedback, it may not be communicated effectively because of the teacher's wording or classmates' receptivity. Or alternatively, the interaction of knowledge and story may not be as effective, and even the story may overshadow the student's perceptions and emotions in learning. So my strategy would be to train the teachers who have been involved in the experiment as professionally as possible, and to consult multiple organisations to get the materials that work best. In addition, I plan to use Cronbach's $\alpha$ to calculate the scale's validity and because we reference lots of previous papers, so our measure will have a very nice construct and criterion validity.\\
+
+\section*{Sampling \& Randomization}
+\noindent As mentioned in Assignment 1, the population for this sampling is the entire Trinity undergraduate population. Since obtaining the sampling frame for this sampling is convenient, simple random sampling can fully satisfy the needs. However, in order to reach randomisation, we need to make the following treatment. After obtaining the entire list from the Registrar's Office, we should disrupt the order of the list to prevent the number from being in a particular order, and replace the student number into numerical numbers (e.g., 000001, 000002, etc.), then, we consult the table of random numbers to perform simple random sampling based on the sample size.\\
+
+\noindent To make sure our sample size,  we need to set our null and alternative hypothesis now: 
+\begin{center}
+	$H_0:$ There is no differences between gamification and traditional teaching methods.\\
+	$H_1:$ There are differences between gamification and traditional teaching methods.\\
+\end{center}
+\noindent According to our experience, we know: 
+\begin{center}
+	$\alpha = 0.05$, $StatisticsPower = 1 - \beta = 0.8$
+\end{center}
+Previous research show gamification caused increase at 12\% in attendance, 2 points in final score, and 32.5\% in posting (\cite{barata2013improving}). It has also been shown that the gamification effect has an overall improvement of 48\% for students at the 95\% confidence level.(\cite{kim2021effects}) So, we got:
+\begin{center}
+	$EffectSize = 0.48$
+\end{center}
+Use formula to calculate the sample size: 
+\begin{equation}
+	n = \frac{{2(Z_{\alpha/2} + Z_{\beta})^2 \sigma^2}}{{\delta^2}}
+\end{equation}
+\noindent And we know our sample size should be 70 students per group.\\
+
+\noindent I plan to make a randomization checks after sampling by calculating the demographics like gender proportion,  age distribution, institution belongs, etc. of the sample and compare with the population, if they are similar, then means the randomization is perfect.\\
+
+\section*{Implementation}
+
+\noindent A pilot survey will be held in Michaelmas term, and during this pilot survey, I will check all the details trough the sampling, manipulation and data collection, validity and reliability tests, etc. When issues are found, we can amend them to ensure the smooth running of the formal investigation.\\
+
+\newpage
+\bibliographystyle{agsm}
+\bibliography{mybibliography}
+
+\end{document}
