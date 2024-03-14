@@ -18,3 +18,6 @@ Experimental Methods for Social Scientists Coursework Records.
   + Assignment2_Reference.bib
  
 + [3] FinalProject
+  + FinalProject_Chenxi.tex
+  + FinalProject_Chenxi.pdf
+  + FinalProject_Reference.bib
