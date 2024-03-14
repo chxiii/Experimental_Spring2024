@@ -21,3 +21,5 @@ Experimental Methods for Social Scientists Coursework Records.
   + FinalProject_Chenxi.tex
   + FinalProject_Chenxi.pdf
   + FinalProject_Reference.bib
+  + literature_statistics.pdf
+  + results_statistics.pdf
